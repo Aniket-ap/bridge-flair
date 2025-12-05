@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Client Business - About</title>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://cdn.jsdelivr.net 'nonce-bf'; script-src 'self'; img-src 'self' data:; font-src 'self' https://cdn.jsdelivr.net; connect-src 'self'">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+<div data-include="header"></div>
+
+<style nonce="bf">
+  #about-page-hero { background: var(--contact-bg); padding: 64px 0; }
+  #about-page-hero .container { padding: 0 24px; }
+  #about-page-hero .about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; align-items: center; }
+  #about-page-hero .eyebrow { color: var(--primary); font-weight: 600; font-size: 0.95rem; }
+  #about-page-hero .about-title { font-size: 44px; color: var(--text); }
+  #about-page-hero .about-lead { color: var(--muted); margin-bottom: 16px; }
+  #about-page-hero .about-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  #about-page-hero .about-item { position: relative; padding-left: 18px; color: var(--text); }
+  #about-page-hero .about-item::before { content: ""; position: absolute; left: 0; top: 10px; width: 8px; height: 8px; border-radius: 50%; background: var(--primary); display: inline-block; }
+  #about-page-hero .about-image { width: 100%; height: 420px; display: block; border-radius: 12px; object-fit: cover; }
+  #about-page-hero .about-divider { height: 1px; background: var(--border); margin: 32px 0; }
+  #about-page-hero .about-features-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  #about-page-hero .about-feature { text-align: center; }
+  #about-page-hero .about-feature-icon { font-size: 28px; color: var(--text); margin-bottom: 8px; display: inline-block; }
+  #about-page-hero .about-feature h3 { font-size: 18px; font-weight: 700; color: var(--text); margin: 8px 0; }
+  #about-page-hero .about-feature p { color: var(--muted); }
+  @media (max-width: 992px) {
+    #about-page-hero .about-grid { grid-template-columns: 1fr; }
+    #about-page-hero .about-title { font-size: 36px; }
+    #about-page-hero .about-image { height: 300px; }
+  }
+</style>
+<section class="page-banner">
+  <div class="container">
+    <div class="banner-content">
+      <h1>Why Choose Us</h1>
+      <nav class="breadcrumb-box" aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li>About</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+ </section>
+<main class="about-main">
+  <section id="about-page-hero">
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <p class="eyebrow">Who We Are</p>
+          <h2 class="about-title">AI-Driven. Agile-Focused.<br/>Future-Ready.</h2>
+          <p class="about-lead">At BridgeFlair, we redefine how businesses innovate, adapt, and scale. Combining AI-driven talent solutions with cutting-edge digital transformation strategies, we empower organizations to stay ahead in an ever‑evolving digital landscape.</p>
+          <ul class="about-list">
+            <li class="about-item">AI-powered talent solutions and digital transformation</li>
+            <li class="about-item">Expertise in artificial intelligence and machine learning</li>
+            <li class="about-item">Agile methodologies for faster results</li>
+            <li class="about-item">Future-proof strategies for long-term success</li>
+          </ul>
+        </div>
+        <img class="about-image" src="assets/image/faq-2.jpg" alt="Team collaborating">
+      </div>
+      <div class="about-divider"></div>
+      <ul class="about-features-grid">
+        <li class="about-feature">
+          <span class="about-feature-icon"><i class="fa-solid fa-diagram-project"></i></span>
+          <h3>Agile Transformation</h3>
+          <p>Implement agile frameworks for collaboration, flexibility, and continuous innovation.</p>
+        </li>
+        <li class="about-feature">
+          <span class="about-feature-icon"><i class="fa-solid fa-robot"></i></span>
+          <h3>AI &amp; Automation</h3>
+          <p>Streamline operations, enhance insights, and improve decision‑making.</p>
+        </li>
+        <li class="about-feature">
+          <span class="about-feature-icon"><i class="fa-solid fa-cloud"></i></span>
+          <h3>Cloud &amp; Data Intelligence</h3>
+          <p>Optimize operations with secure and scalable cloud and data services.</p>
+        </li>
+        <li class="about-feature">
+          <span class="about-feature-icon"><i class="fa-solid fa-users-gear"></i></span>
+          <h3>Intelligent IT Staffing</h3>
+          <p>Access AI‑savvy talent for building and scaling innovative solutions.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+      <section class="update-section" aria-labelledby="update-title">
+      <div class="update-inner">
+        <div class="update-grid">
+          <div class="update-left">
+            <h2 id="update-title">Get Latest Update from Bridge Flair Stay Connect with Us</h2>
+          </div>
+          <form class="cta-form" action="#" method="post" aria-label="Subscribe">
+            <input class="cta-input" type="email" placeholder="Enter your Email" aria-label="Email">
+            <button class="btn btn-primary cta-button" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="steps-wrap">
+        <div class="steps-card">
+          <ul class="steps-grid">
+            <li class="steps-item">
+              <span class="steps-badge"><i class="fa-regular fa-clipboard"></i></span>
+              <h3 class="steps-title">Consult & Strategize</h3>
+              <p class="steps-desc">We assess your business goals and define a tailored roadmap to drive transformation.</p>
+            </li>
+            <li class="steps-item">
+              <span class="steps-badge"><i class="fa-solid fa-database"></i></span>
+              <h3 class="steps-title">Data & AI Integration</h3>
+              <p class="steps-desc">We implement scalable AI models and integrate them with your existing data and workflows.</p>
+            </li>
+            <li class="steps-item">
+              <span class="steps-badge"><i class="fa-regular fa-user"></i></span>
+              <h3 class="steps-title">Deploy & Optimize</h3>
+              <p class="steps-desc">From deployment to continuous improvement, we ensure your solutions deliver real impact.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+</main>
+<div data-include="footer"></div>
+<script src="assets/js/include.js"></script>
+</body>
+</html>

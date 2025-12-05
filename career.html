@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Client Business - Career</title>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://cdn.jsdelivr.net; script-src 'self'; img-src 'self' data:; font-src 'self' https://cdn.jsdelivr.net; connect-src 'self'">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+<div data-include="header"></div>
+<section class="page-banner">
+  <div class="container">
+    <div class="banner-content">
+      <h1>Career</h1>
+      <nav class="breadcrumb-box" aria-label="Breadcrumb">
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li>Career</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+ </section>
+<main class="career-main">
+  <section class="career-section">
+    <div class="container">
+    <div class="career-intro">
+      <div>
+        <h2>Inspire and Get Inspired by <br/> Professional Experts</h2>
+      </div>
+      <p>Our platform is tailor-made for developers, providing a powerful and <a href="#">easy-to-use</a> solution. With our tools, you can streamline your process.</p>
+    </div>
+    <ul class="job-list">
+      <li class="job-item">
+        <div class="job-left">
+          <div class="job-meta"><span class="job-badge">Full Time</span><span class="job-location">New York</span></div>
+          <h3 class="job-title">UI &amp; Web Developer</h3>
+        </div>
+        <p class="job-desc">The process of creating and maintaining websites. HTML, CSS, JavaScript, management systems, creating layouts and designs, simply drag, drop and customize.</p>
+        <button class="apply-btn" type="button" data-open-modal="#apply-modal">Apply Now</button>
+      </li>
+      <li class="job-item">
+        <div class="job-left">
+          <div class="job-meta"><span class="job-badge">Full Time</span><span class="job-location">Bangladesh</span></div>
+          <h3 class="job-title">App Developer</h3>
+        </div>
+        <p class="job-desc">The process of creating and maintaining websites. HTML, CSS, JavaScript, management systems, creating layouts and designs, simply drag, drop and customize.</p>
+        <button class="apply-btn" type="button" data-open-modal="#apply-modal">Apply Now</button>
+      </li>
+    </ul>
+    <section class="requirements-section">
+      <header class="req-header">
+        <h3>Job Requirements</h3>
+        <p>A job responsibility could be a description of your duties in a very explicit position. you'll be able to use it to point your qualifications once applying for a replacement job day Job responsibility summaries embody data concerning roles, activities and tasks that relate to fulfilling job necessities, like writing, selling, decision-making and planning professions.</p>
+      </header>
+      <ul class="req-grid">
+        <li class="req-card">
+          <span class="req-icon" aria-hidden="true"><i class="fa-solid fa-file-code"></i></span>
+          <h4 class="req-title">PHP Programing</h4>
+          <p class="req-desc">Monotonically synergize grants to business visualize strategic infomediaries</p>
+          <span class="req-underline" aria-hidden="true"></span>
+        </li>
+        <li class="req-card">
+          <span class="req-icon" aria-hidden="true"><i class="fa-solid fa-gear"></i></span>
+          <h4 class="req-title">WordPress Development</h4>
+          <p class="req-desc">Monotonically synergize grants to business visualize strategic infomediaries</p>
+          <span class="req-underline" aria-hidden="true"></span>
+        </li>
+        <li class="req-card">
+          <span class="req-icon" aria-hidden="true"><i class="fa-regular fa-display"></i></span>
+          <h4 class="req-title">UI/UX Development</h4>
+          <p class="req-desc">Monotonically synergize grants to business visualize strategic infomediaries</p>
+          <span class="req-underline" aria-hidden="true"></span>
+        </li>
+      </ul>
+    </section>
+    </div>
+  </section>
+</main>
+<div class="modal" id="apply-modal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="modal-overlay"></div>
+  <div class="modal-panel">
+    <div class="modal-header">
+      <h2>Apply Now</h2>
+      <button class="modal-close" type="button" data-modal-close aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <form class="modal-form form-grid" action="#" method="post">
+      <input class="form-control" type="text" placeholder="Full Name" aria-label="Full Name">
+      <input class="form-control" type="email" placeholder="Email" aria-label="Email">
+      <input class="form-control" type="text" placeholder="Role applying for" aria-label="Role">
+      <input class="form-control" type="file" aria-label="Resume">
+      <textarea class="form-textarea" placeholder="Cover letter" aria-label="Cover letter"></textarea>
+      <div class="modal-actions">
+        <button class="btn btn-primary" type="submit">Submit</button>
+        <button class="btn" type="button" data-modal-close>Close</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div data-include="footer"></div>
+<script src="assets/js/include.js"></script>
+</body>
+</html>
