@@ -21,64 +21,196 @@
           <li>Career</li>
         </ol>
       </nav>
-    </div>
-  </div>
- </section>
+</div>
+</div>
+</section>
 <main class="career-main">
-  <section class="career-section">
+  <section class="vision-section" aria-labelledby="vision-title">
     <div class="container">
-    <div class="career-intro">
-      <div>
-        <h2>Inspire and Get Inspired by <br/> Professional Experts</h2>
+      <div class="vision-grid">
+        <div class="vision-card">
+          <h2 id="vision-title" class="vision-title"><span class="accent">Our Vision:</span> Every identity secured with the right level of privilege controls.</h2>
+          <p class="vision-lead">Our Vision reflects how our heritage as the Privileged Access Management leader propels us forward in the Identity Security market.</p>
+        </div>
+        <figure class="vision-media">
+          <img class="vision-img" src="assets/image/faq-2.jpg" alt="Team collaboration">
+        </figure>
       </div>
-      <p>Our platform is tailor-made for developers, providing a powerful and <a href="#">easy-to-use</a> solution. With our tools, you can streamline your process.</p>
-    </div>
-    <ul class="job-list">
-      <li class="job-item">
-        <div class="job-left">
-          <div class="job-meta"><span class="job-badge">Full Time</span><span class="job-location">New York</span></div>
-          <h3 class="job-title">UI &amp; Web Developer</h3>
-        </div>
-        <p class="job-desc">The process of creating and maintaining websites. HTML, CSS, JavaScript, management systems, creating layouts and designs, simply drag, drop and customize.</p>
-        <button class="apply-btn" type="button" data-open-modal="#apply-modal">Apply Now</button>
-      </li>
-      <li class="job-item">
-        <div class="job-left">
-          <div class="job-meta"><span class="job-badge">Full Time</span><span class="job-location">Bangladesh</span></div>
-          <h3 class="job-title">App Developer</h3>
-        </div>
-        <p class="job-desc">The process of creating and maintaining websites. HTML, CSS, JavaScript, management systems, creating layouts and designs, simply drag, drop and customize.</p>
-        <button class="apply-btn" type="button" data-open-modal="#apply-modal">Apply Now</button>
-      </li>
-    </ul>
-    <section class="requirements-section">
-      <header class="req-header">
-        <h3>Job Requirements</h3>
-        <p>A job responsibility could be a description of your duties in a very explicit position. you'll be able to use it to point your qualifications once applying for a replacement job day Job responsibility summaries embody data concerning roles, activities and tasks that relate to fulfilling job necessities, like writing, selling, decision-making and planning professions.</p>
-      </header>
-      <ul class="req-grid">
-        <li class="req-card">
-          <span class="req-icon" aria-hidden="true"><i class="fa-solid fa-file-code"></i></span>
-          <h4 class="req-title">PHP Programing</h4>
-          <p class="req-desc">Monotonically synergize grants to business visualize strategic infomediaries</p>
-          <span class="req-underline" aria-hidden="true"></span>
-        </li>
-        <li class="req-card">
-          <span class="req-icon" aria-hidden="true"><i class="fa-solid fa-gear"></i></span>
-          <h4 class="req-title">WordPress Development</h4>
-          <p class="req-desc">Monotonically synergize grants to business visualize strategic infomediaries</p>
-          <span class="req-underline" aria-hidden="true"></span>
-        </li>
-        <li class="req-card">
-          <span class="req-icon" aria-hidden="true"><i class="fa-regular fa-display"></i></span>
-          <h4 class="req-title">UI/UX Development</h4>
-          <p class="req-desc">Monotonically synergize grants to business visualize strategic infomediaries</p>
-          <span class="req-underline" aria-hidden="true"></span>
-        </li>
-      </ul>
-    </section>
     </div>
   </section>
+  <section class="purpose-section" aria-labelledby="purpose-title">
+    <div class="container">
+      <h2 id="purpose-title" class="purpose-title">We’re driven by our purpose.</h2>
+      <div class="purpose-grid">
+        <div class="purpose-left">
+          <h3 class="purpose-mission">Our Mission: Secure the world against cyber threats so together we can move fearlessly forward.</h3>
+          <p class="purpose-lead">Founded in 1999, we’re the pioneer and the leader in Identity Security — thanks to our team of more than 3,000 people working together to achieve our goals.</p>
+        </div>
+        <ul class="purpose-right" aria-label="Purpose points">
+          <li class="purpose-item">
+            <span class="purpose-badge"><i class="fa-solid fa-key"></i></span>
+            <div class="purpose-content">
+              <h4>We’re focused on security</h4>
+              <p>Across all we do, our relentless focus is on security. We must be ready for the current and future threats the world faces.</p>
+            </div>
+          </li>
+          <li class="purpose-item">
+            <span class="purpose-badge"><i class="fa-solid fa-key"></i></span>
+            <div class="purpose-content">
+              <h4>We’re all in it together</h4>
+              <p>It takes all of us, our partners, and our customers coming together to achieve our Mission.</p>
+            </div>
+          </li>
+          <li class="purpose-item">
+            <span class="purpose-badge"><i class="fa-solid fa-key"></i></span>
+            <div class="purpose-content">
+              <h4>We’re powered for success</h4>
+              <p>We do all of this so we can achieve amazing things together, without being held back by fear of bad actors and threats.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="jobs-section" aria-labelledby="jobs-title">
+    <div class="container">
+      <h2 id="jobs-title" class="jobs-title">All Open Positions</h2>
+      <div class="filters-bar">
+      <form id="job-filters" class="job-filters" action="#" method="get">
+        <div class="filters-grid">
+          <label class="filter-item">
+            <span class="filter-label">Job Title / Keyword</span>
+            <input type="text" id="filter-keyword" placeholder="Keyword" aria-label="Keyword">
+          </label>
+          <label class="filter-item">
+            <span class="filter-label">Location</span>
+            <select id="filter-location" aria-label="Location">
+              <option value="All">All Locations</option>
+              <option value="USA">USA</option>
+              <option value="Remote">Remote</option>
+              <option value="India">India</option>
+              <option value="Israel">Israel</option>
+              <option value="UK">UK</option>
+            </select>
+          </label>
+          <label class="filter-item">
+            <span class="filter-label">Category</span>
+            <select id="filter-category" aria-label="Category">
+              <option value="All">All Categories</option>
+              <option value="Engineering">Engineering</option>
+              <option value="Sales">Sales</option>
+              <option value="Design">Design</option>
+              <option value="Data">Data</option>
+              <option value="Operations">Operations</option>
+            </select>
+          </label>
+          <div class="filter-actions">
+            <button class="btn btn-primary" type="submit">Search</button>
+          </div>
+        </div>
+      </form>
+      </div>
+
+      <div class="jobs-results" aria-live="polite">
+        <span id="jobs-count">7 results</span>
+      </div>
+
+      <div class="jobs-table-wrap">
+        <table class="jobs-table" aria-label="Job positions">
+          <thead>
+            <tr>
+              <th>Job Title</th>
+              <th>Location</th>
+              <th>Category</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="jobs-body">
+            <tr data-title="Senior Backend Software Engineer" data-location="Israel" data-category="Engineering">
+              <td>Senior Backend Software Engineer</td>
+          <td><span class="chip chip-location">Israel</span></td>
+          <td><span class="chip chip-category">Engineering</span></td>
+              <td><button class="apply-btn" type="button" data-open-modal="#apply-modal">Apply Now</button></td>
+            </tr>
+            <tr data-title="Customer Success Manager" data-location="USA" data-category="Sales">
+              <td>Customer Success Manager</td>
+          <td><span class="chip chip-location">USA</span></td>
+          <td><span class="chip chip-category">Sales</span></td>
+              <td><button class="apply-btn" type="button" data-open-modal="#apply-modal">Apply Now</button></td>
+            </tr>
+            <tr data-title="Senior Solutions Engineer" data-location="USA" data-category="Engineering">
+              <td>Senior Solutions Engineer</td>
+          <td><span class="chip chip-location">USA</span></td>
+          <td><span class="chip chip-category">Engineering</span></td>
+              <td><button class="apply-btn" type="button" data-open-modal="#apply-modal">Apply Now</button></td>
+            </tr>
+            <tr data-title="Quality Assurance Engineer" data-location="UK" data-category="Engineering">
+              <td>Quality Assurance Engineer</td>
+          <td><span class="chip chip-location">UK</span></td>
+          <td><span class="chip chip-category">Engineering</span></td>
+              <td><button class="apply-btn" type="button" data-open-modal="#apply-modal">Apply Now</button></td>
+            </tr>
+            <tr data-title="Product Designer" data-location="Remote" data-category="Design">
+              <td>Product Designer</td>
+          <td><span class="chip chip-location">Remote</span></td>
+          <td><span class="chip chip-category">Design</span></td>
+              <td><button class="apply-btn" type="button" data-open-modal="#apply-modal">Apply Now</button></td>
+            </tr>
+            <tr data-title="Data Analyst" data-location="India" data-category="Data">
+              <td>Data Analyst</td>
+          <td><span class="chip chip-location">India</span></td>
+          <td><span class="chip chip-category">Data</span></td>
+              <td><button class="apply-btn" type="button" data-open-modal="#apply-modal">Apply Now</button></td>
+            </tr>
+            <tr data-title="Operations Manager" data-location="USA" data-category="Operations">
+              <td>Operations Manager</td>
+          <td><span class="chip chip-location">USA</span></td>
+          <td><span class="chip chip-category">Operations</span></td>
+              <td><button class="apply-btn" type="button" data-open-modal="#apply-modal">Apply Now</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <script>
+    (function(){
+      const form = document.getElementById('job-filters');
+      const keywordEl = document.getElementById('filter-keyword');
+      const locationEl = document.getElementById('filter-location');
+      const categoryEl = document.getElementById('filter-category');
+      const body = document.getElementById('jobs-body');
+      const countEl = document.getElementById('jobs-count');
+
+      function normalize(s){ return (s || '').toLowerCase().trim(); }
+
+      function filterJobs(ev){ if(ev) ev.preventDefault();
+        const kw = normalize(keywordEl.value);
+        const loc = locationEl.value;
+        const cat = categoryEl.value;
+        let visible = 0;
+        Array.from(body.querySelectorAll('tr')).forEach((row) => {
+          const title = normalize(row.getAttribute('data-title'));
+          const rLoc = row.getAttribute('data-location');
+          const rCat = row.getAttribute('data-category');
+          const matchKw = kw === '' || title.includes(kw);
+          const matchLoc = loc === 'All' || rLoc === loc;
+          const matchCat = cat === 'All' || rCat === cat;
+          const show = matchKw && matchLoc && matchCat;
+          row.style.display = show ? '' : 'none';
+          if(show) visible++;
+        });
+        countEl.textContent = visible + ' results';
+      }
+
+      form.addEventListener('submit', filterJobs);
+      keywordEl.addEventListener('input', filterJobs);
+      locationEl.addEventListener('change', filterJobs);
+      categoryEl.addEventListener('change', filterJobs);
+      filterJobs();
+    })();
+  </script>
+  
 </main>
 <div class="modal" id="apply-modal" aria-hidden="true" role="dialog" aria-modal="true">
   <div class="modal-overlay"></div>
