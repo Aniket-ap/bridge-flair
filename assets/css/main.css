@@ -35,7 +35,7 @@ a:hover { color: var(--accent); }
 
 .nav-list { list-style: none; display: flex; align-items: center; gap: 24px; margin: 0; padding: 0; }
 .nav-item { position: relative; }
-.nav-link { display: inline-flex; align-items: center; height: var(--header-h); padding: 0 12px; font-family: 'Sora', 'Nunito', sans-serif; font-weight: 600; color: var(--text); font-size: 16px; }
+.nav-link { display: inline-flex; align-items: center; height: var(--header-h); padding: 0 12px; font-family: 'Sora', 'Nunito', sans-serif; font-weight: 600; color: var(--text); font-size: 12px; }
 .nav-link:hover, .nav-item.active .nav-link { color: var(--muted); }
 .nav-link .fa-chevron-down { margin-left: 6px; font-size: 12px; color: var(--muted); }
 .nav-item .nav-link::before { content: none; }
