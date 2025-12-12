@@ -1,459 +1,524 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Client Business - Home</title>
-    <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; style-src 'self' https://cdn.jsdelivr.net; script-src 'self'; img-src 'self' data:; font-src 'self' https://cdn.jsdelivr.net; connect-src 'self'">
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css"
-        crossorigin="anonymous" referrerpolicy="no-referrer">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BridgeFlair</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/home.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 <body>
-    <div data-include="header"></div>
-    <main class="home-main">
-        <section class="hero-section" aria-labelledby="hero-title">
-            <div class="hero-bg">
-                <div class="hero-slider" aria-label="Hero carousel">
-                    <div class="hero-slide" data-index="0">
-                        <img class="hero-img" src="assets/image/hero-1.webp" alt="Secure every identity">
-                    </div>
-                    <div class="hero-slide" data-index="1">
-                        <img class="hero-img" src="assets/image/hero-2.webp" alt="Power every possibility">
-                    </div>
-                </div>
-                <button class="hero-arrow hero-prev" aria-label="Previous slide"><i
-                        class="fa-solid fa-chevron-left"></i></button>
-                <button class="hero-arrow hero-next" aria-label="Next slide"><i
-                        class="fa-solid fa-chevron-right"></i></button>
-                <div class="container">
-                    <div class="hero-content">
-                        <h1 id="hero-title" class="hero-title"><span>Secure every identity.</span><br><span
-                                class="accent">Power every possibility.</span></h1>
-                        <p class="hero-lead">Your organization runs on identity — human, machine and AI. Secure them all
-                            with the right level of privilege controls.</p>
-                        <a class="btn btn-primary hero-cta" href="services.html">Explore the Platform</a>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="hero-cards-wrap">
-                        <ul class="hero-cards" aria-label="Highlights">
-                            <li class="hero-card">
-                                <span class="hero-card-badge"><i class="fa-solid fa-newspaper"></i></span>
-                                <div class="hero-card-body">
-                                    <h3 class="hero-card-title">BridgeFlair Announces Strong Quarterly Results</h3>
-                                    <a class="hero-card-link" href="#">Read Press Release <i
-                                            class="fa-solid fa-arrow-right"></i></a>
-                                </div>
-                            </li>
-                            <li class="hero-card">
-                                <span class="hero-card-badge"><i class="fa-solid fa-chart-line"></i></span>
-                                <div class="hero-card-body">
-                                    <h3 class="hero-card-title">Leader in the 2025 AI & Security Landscape</h3>
-                                    <a class="hero-card-link" href="#">Download Complimentary Copy <i
-                                            class="fa-solid fa-arrow-right"></i></a>
-                                </div>
-                            </li>
-                            <li class="hero-card">
-                                <span class="hero-card-badge"><i class="fa-solid fa-calendar-days"></i></span>
-                                <div class="hero-card-body">
-                                    <h3 class="hero-card-title">Impact 2026 Registration Now Open!</h3>
-                                    <a class="hero-card-link" href="#">Sign Up Now for Best Rate <i
-                                            class="fa-solid fa-arrow-right"></i></a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <div id="site-header-root"></div>
 
-        </section>
-
-        <section class="identity-video-section" aria-labelledby="iv-title">
-            <div class="container">
-                <div class="iv-grid">
-                    <div class="iv-left">
-                        <div class="iv-card">
-                            <h2 id="iv-title" class="iv-title">Secure every identity — human, machine and AI — with the <span class="iv-accent">right level of privilege controls.</span></h2>
-                            <a class="btn btn-secondary iv-cta" href="#" data-open-modal="#video-modal">Watch the Video</a>
-                        </div>
-                    </div>
-                    <div class="iv-right">
-                        <figure class="iv-media">
-                            <img class="iv-img" src="assets/image/service-details.jpg" alt="Play video">
-                            <button class="iv-play" type="button" aria-label="Play" data-open-modal="#video-modal"><i class="fa-solid fa-play"></i></button>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="identity-benefits-section" aria-labelledby="ib-title">
-            <div class="container">
-                <div class="ib-grid">
-                    <div class="ib-left">
-                        <figure class="ib-media">
-                            <img class="ib-img" src="assets/image/service-details.jpg" alt="Identity platform overview">
-                        </figure>
-                        <div class="ib-copy">
-                            <h2 id="ib-title" class="ib-title">Secure identities.<br>Shut out attackers.</h2>
-                            <p class="ib-lead">Seamlessly secure identities throughout the cycle of accessing any resource across any infrastructure, including hybrid, SaaS and multi-cloud. The BridgeFlair identity security platform is the first line of defense against malicious actors and unauthorized access to protect what matters most.</p>
-                            <a class="btn btn-secondary ib-cta" href="#">Request a Demo</a>
-                        </div>
-                    </div>
-                    <div class="ib-right">
-                        <ul class="ib-list" aria-label="Key capabilities">
-                            <li class="ib-item">
-                                <span class="ib-badge"><i class="fa-solid fa-shield-halved"></i></span>
-                                <div class="ib-content">
-                                    <h3>Seamless & secure access for all identities</h3>
-                                    <p>Combine secure SSO, Adaptive MFA, Lifecycle Management and analytics to streamline operations and give users simple, secure access anywhere.</p>
-                                </div>
-                            </li>
-                            <li class="ib-item">
-                                <span class="ib-badge"><i class="fa-solid fa-user-shield"></i></span>
-                                <div class="ib-content">
-                                    <h3>Intelligent privilege controls</h3>
-                                    <p>Apply world‑class controls across the estate, with differentiated policies for workforce, third‑party, endpoints and machine identities as they access sensitive data.</p>
-                                </div>
-                            </li>
-                            <li class="ib-item">
-                                <span class="ib-badge"><i class="fa-solid fa-diagram-project"></i></span>
-                                <div class="ib-content">
-                                    <h3>Flexible identity automation & orchestration</h3>
-                                    <p>Streamline processes, improve efficiencies and ensure right access with orchestration, lifecycle management, permissions and directory or federation services.</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="mobile-hero-cards" aria-label="Highlights">
-            <div class="container">
-                <ul class="m-hero-cards">
-                    <li class="m-hero-card">
-                        <span class="m-hero-badge"><i class="fa-solid fa-newspaper"></i></span>
-                        <div class="m-hero-body">
-                            <h3 class="m-hero-title">BridgeFlair Announces Strong Quarterly Results</h3>
-                            <a class="m-hero-link" href="#">Read Press Release <i
-                                    class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </li>
-                    <li class="m-hero-card">
-                        <span class="m-hero-badge"><i class="fa-solid fa-chart-line"></i></span>
-                        <div class="m-hero-body">
-                            <h3 class="m-hero-title">Leader in the 2025 AI & Security Landscape</h3>
-                            <a class="m-hero-link" href="#">Download Complimentary Copy <i
-                                    class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </li>
-                    <li class="m-hero-card">
-                        <span class="m-hero-badge"><i class="fa-solid fa-calendar-days"></i></span>
-                        <div class="m-hero-body">
-                            <h3 class="m-hero-title">Impact 2026 Registration Now Open!</h3>
-                            <a class="m-hero-link" href="#">Sign Up Now for Best Rate <i
-                                    class="fa-solid fa-arrow-right"></i></a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="services-showcase" aria-labelledby="showcase-title">
-            <div class="container">
-                
-
-                <div class="showcase-header">
-                    <div class="showcase-eyebrow"><i class="fa-solid fa-sparkles"></i> BRIDGEFLAIR SERVICES</div>
-                    <h2 id="showcase-title" class="showcase-title">Apply <span class="accent">intelligent privilege controls</span> across the entire identity lifecycle</h2>
-                    <p class="showcase-subtitle">Expand controls across human and machine identities to streamline access from any location, with standing or just‑in‑time access as required — using BridgeFlair’s platform and best practices.</p>
-                </div>
-
-                <ul class="showcase-grid" aria-label="Service cards">
-                    <li class="svc-card">
-                        <span class="svc-icon"><i class="fa-solid fa-people-group"></i></span>
-                        <h3 class="svc-title">Workforce & Customer Access</h3>
-                        <p class="svc-desc">Ensure the right users have secure access to applications and infrastructure across hybrid and multi‑cloud.</p>
-                        <a class="svc-link" href="services.html">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-                    </li>
-                    <li class="svc-card">
-                        <span class="svc-icon"><i class="fa-solid fa-shield-halved"></i></span>
-                        <h3 class="svc-title">Endpoint Privilege Security</h3>
-                        <p class="svc-desc">Reduce attack surface by removing local admin rights and enforcing role‑based least privilege.</p>
-                        <a class="svc-link" href="services.html">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-                    </li>
-                    <li class="svc-card">
-                        <span class="svc-icon"><i class="fa-solid fa-user-shield"></i></span>
-                        <h3 class="svc-title">Privileged Access Management</h3>
-                        <p class="svc-desc">Secure privileged credentials and secrets across servers, applications, endpoints and cloud resources.</p>
-                        <a class="svc-link" href="services.html">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-                    </li>
-                    <li class="svc-card">
-                        <span class="svc-icon"><i class="fa-solid fa-key"></i></span>
-                        <h3 class="svc-title">Secrets Management</h3>
-                        <p class="svc-desc">Protect machine and application credentials, rotate secrets and govern access across environments.</p>
-                        <a class="svc-link" href="services.html">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-                    </li>
-                    <li class="svc-card">
-                        <span class="svc-icon"><i class="fa-solid fa-id-card"></i></span>
-                        <h3 class="svc-title">Identity Management</h3>
-                        <p class="svc-desc">Automate identity lifecycle, centrally manage permissions and analyze access to enforce least privilege.</p>
-                        <a class="svc-link" href="services.html">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-                    </li>
-                    <li class="svc-card">
-                        <span class="svc-icon"><i class="fa-solid fa-cloud"></i></span>
-                        <h3 class="svc-title">Cloud Security</h3>
-                        <p class="svc-desc">Extend privilege controls to cloud workloads, secure access and monitor excessive permissions.</p>
-                        <a class="svc-link" href="services.html">Learn More <i class="fa-solid fa-arrow-right"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="news-section" aria-labelledby="news-title">
-            <div class="container">
-                <div class="news-header">
-                    <h2 id="news-title" class="news-title">What’s new at BridgeFlair?</h2>
-                    <p class="news-subtitle">Check out our latest news, content, events and more.</p>
-                </div>
-
-                <div class="news-top">
-                    <figure class="news-feature">
-                        <img class="news-feature-img" src="assets/image/service-details.jpg" alt="Platform and identity security update">
-                    </figure>
-                    <article class="news-spotlight">
-                        <time class="news-date" datetime="2025-12-09">December 9, 2025</time>
-                        <a href="#" class="news-link"><h3 class="news-heading">How AI agent privileges are redefining cyber insurance expectations</h3></a>
-                        <p class="news-summary">As automation expands, a new category of risk emerges. BridgeFlair explains how policy frameworks and controls should adapt to address AI agent privileges across enterprises.</p>
-                    </article>
-                </div>
-
-                <ul class="news-grid" aria-label="Latest posts">
-                    <li class="news-card">
-                        <figure class="news-media">
-                            <img class="news-img" src="assets/image/faq-1.jpg" alt="BridgeFlair TLS certificate scan">
-                        </figure>
-                        <div class="news-body">
-                            <time class="news-date" datetime="2025-11-18">November 18, 2025</time>
-                            <a href="#" class="news-link"><h4 class="news-title-sm">BridgeFlair unveils a free TLS certificate scan to cut outages</h4></a>
-                        </div>
-                    </li>
-                    <li class="news-card">
-                        <figure class="news-media">
-                            <img class="news-img" src="assets/image/faq-2.jpg" alt="Acquisition update">
-                        </figure>
-                        <div class="news-body">
-                            <time class="news-date" datetime="2025-11-13">November 13, 2025</time>
-                            <a href="#" class="news-link"><h4 class="news-title-sm">Shareholders approve BridgeFlair’s strategic acquisition plan</h4></a>
-                        </div>
-                    </li>
-                    <li class="news-card">
-                        <figure class="news-media">
-                            <img class="news-img" src="assets/image/hero-2.webp" alt="Identity risks in 2026">
-                        </figure>
-                        <div class="news-body">
-                            <time class="news-date" datetime="2025-12-04">December 4, 2025</time>
-                            <a href="#" class="news-link"><h4 class="news-title-sm">AI agents and identity risks: How security will shift in 2026</h4></a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="work-showcase" aria-labelledby="work-title">
-            <div class="container">
-                <div class="work-header">
-                    <div class="work-eyebrow"><i class="fa-solid fa-sparkles"></i> OUR WORK SHOWCASE</div>
-                    <h2 id="work-title" class="work-title">Where Innovation Meets Success</h2>
-                </div>
-                <ul class="work-grid" aria-label="Case studies">
-                    <li class="work-card">
-                        <img class="work-img" src="assets/image/hero-1.webp" alt="Market Analysis dashboard">
-                        <div class="work-overlay">
-                            <h3 class="work-name">Market Analysis</h3>
-                            <span class="work-cat">Technology</span>
-                        </div>
-                    </li>
-                    <li class="work-card">
-                        <img class="work-img" src="assets/image/faq-1.jpg" alt="Risk Assessment visuals">
-                        <div class="work-overlay">
-                            <h3 class="work-name">Risk Assessment</h3>
-                            <span class="work-cat">Technology</span>
-                        </div>
-                    </li>
-                    <li class="work-card">
-                        <img class="work-img" src="assets/image/hero-2.webp" alt="Investment Insights charts">
-                        <div class="work-overlay">
-                            <h3 class="work-name">Investment Insights</h3>
-                            <span class="work-cat">Technology</span>
-                        </div>
-                    </li>
-                    <li class="work-card">
-                        <img class="work-img" src="assets/image/faq-2.jpg" alt="Estate Planning collaboration">
-                        <div class="work-overlay">
-                            <h3 class="work-name">Estate Planning</h3>
-                            <span class="work-cat">Technology</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="testimonials-section" aria-labelledby="testimonials-title">
-            <div class="container">
-                <div class="testimonials-header">
-                    <div class="testimonials-eyebrow"><i class="fa-solid fa-sparkles"></i> TESTIMONIALS</div>
-                    <h2 id="testimonials-title" class="testimonials-title">What Our Loving Clients Saying</h2>
-                </div>
-                <ul class="testimonials-grid" aria-label="Client testimonials">
-                    <li class="testimonial-card">
-                        <div class="testimonial-head">
-                            <img class="testimonial-avatar" src="assets/image/faq-1.jpg" alt="Business Advisor">
-                            <div class="testimonial-info">
-                                <strong class="testimonial-name">Tomasz Jaroszz</strong>
-                                <span class="testimonial-role">Business Advisor</span>
-                            </div>
-                        </div>
-                        <div class="testimonial-divider"></div>
-                        <div class="testimonial-meta">
-                            <div class="rating" aria-label="5 star rating">
-                                <span class="star"><i class="fa-solid fa-star"></i></span>
-                                <span class="star"><i class="fa-solid fa-star"></i></span>
-                                <span class="star"><i class="fa-solid fa-star"></i></span>
-                                <span class="star"><i class="fa-solid fa-star"></i></span>
-                                <span class="star"><i class="fa-solid fa-star"></i></span>
-                            </div>
-                            <time class="testimonial-date" datetime="2023-11-29">Nov 29, 2023</time>
-                        </div>
-                        <p class="testimonial-quote">“Seargin is awe‑inspiring. Their relentless focus on justice and attention to detail gave me peace of mind. I highly recommend their legal services; they are true advocates for clients.”</p>
-                    </li>
-                    <li class="testimonial-card">
-                        <div class="testimonial-head">
-                            <img class="testimonial-avatar" src="assets/image/faq-2.jpg" alt="UI Designer">
-                            <div class="testimonial-info">
-                                <strong class="testimonial-name">Michael Davis</strong>
-                                <span class="testimonial-role">UI Designer</span>
-                            </div>
-                        </div>
-                        <div class="testimonial-divider"></div>
-                        <div class="testimonial-meta">
-                            <div class="rating" aria-label="5 star rating">
-                                <span class="star"><i class="fa-solid fa-star"></i></span>
-                                <span class="star"><i class="fa-solid fa-star"></i></span>
-                                <span class="star"><i class="fa-solid fa-star"></i></span>
-                                <span class="star"><i class="fa-solid fa-star"></i></span>
-                                <span class="star"><i class="fa-solid fa-star"></i></span>
-                            </div>
-                            <time class="testimonial-date" datetime="2023-11-29">Nov 29, 2023</time>
-                        </div>
-                        <p class="testimonial-quote">“Seargin is awe‑inspiring. Their relentless focus on justice and attention to detail gave me peace of mind. I highly recommend their legal services; they are true advocates for clients.”</p>
-                    </li>
-                    <li class="testimonial-card">
-                        <div class="testimonial-head">
-                            <img class="testimonial-avatar" src="assets/image/service-details.jpg" alt="Founder & CEO">
-                            <div class="testimonial-info">
-                                <strong class="testimonial-name">Diamond Hitler</strong>
-                                <span class="testimonial-role">Founder & CEO</span>
-                            </div>
-                        </div>
-                        <div class="testimonial-divider"></div>
-                        <div class="testimonial-meta">
-                            <div class="rating" aria-label="5 star rating">
-                                <span class="star"><i class="fa-solid fa-star"></i></span>
-                                <span class="star"><i class="fa-solid fa-star"></i></span>
-                                <span class="star"><i class="fa-solid fa-star"></i></span>
-                                <span class="star"><i class="fa-solid fa-star"></i></span>
-                                <span class="star"><i class="fa-solid fa-star"></i></span>
-                            </div>
-                            <time class="testimonial-date" datetime="2023-11-29">Nov 29, 2023</time>
-                        </div>
-                        <p class="testimonial-quote">“Seargin is awe‑inspiring. Their relentless focus on justice and attention to detail gave me peace of mind. I highly recommend their legal services; they are true advocates for clients.”</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        
-        <section class="latest-projects" aria-labelledby="lp-title">
-            <div class="container">
-                <div class="lp-header">
-                    <div class="lp-left">
-                        <div class="lp-eyebrow"><i class="fa-solid fa-sparkles"></i> LATEST PROJECTS</div>
-                        <h2 id="lp-title" class="lp-title">Words Meant for the Pages<br>Not the Screens"</h2>
-                    </div>
-                    <div class="lp-right">
-                        <p class="lp-desc">Professionaly optimize interdependent intelectual services visual design infomediaries main issue state creative planning main best practices.</p>
-                    </div>
-                </div>
-                <ul class="lp-list lp-accordion" aria-label="Project list">
-                    <li>
-                        <details class="lp-item">
-                            <summary class="lp-summary">
-                                <span class="lp-num">01</span>
-                                <span class="lp-item-title">Visual Design</span>
-                                <span class="lp-arrow"><i class="fa-solid fa-arrow-right"></i><i class="fa-solid fa-minus"></i></span>
-                            </summary>
-                            <div class="lp-content">
-                                <p>Design systems, UI kits, and brand-aligned visuals for modern products.</p>
-                            </div>
-                        </details>
-                    </li>
-                    <li>
-                        <details class="lp-item">
-                            <summary class="lp-summary">
-                                <span class="lp-num">02</span>
-                                <span class="lp-item-title">Business Consultation</span>
-                                <span class="lp-arrow"><i class="fa-solid fa-arrow-right"></i><i class="fa-solid fa-minus"></i></span>
-                            </summary>
-                            <div class="lp-content">
-                                <p>Strategy workshops and growth roadmaps powered by data‑driven insights.</p>
-                            </div>
-                        </details>
-                    </li>
-                    <li>
-                        <details class="lp-item">
-                            <summary class="lp-summary">
-                                <span class="lp-num">03</span>
-                                <span class="lp-item-title">Business Agency</span>
-                                <span class="lp-arrow"><i class="fa-solid fa-arrow-right"></i><i class="fa-solid fa-minus"></i></span>
-                            </summary>
-                            <div class="lp-content">
-                                <p>End‑to‑end product delivery—from concept to launch and optimization.</p>
-                            </div>
-                        </details>
-                    </li>
-                    <li>
-                        <details class="lp-item">
-                            <summary class="lp-summary">
-                                <span class="lp-num">04</span>
-                                <span class="lp-item-title">Business Factory</span>
-                                <span class="lp-arrow"><i class="fa-solid fa-arrow-right"></i><i class="fa-solid fa-minus"></i></span>
-                            </summary>
-                            <div class="lp-content">
-                                <p>Operational excellence systems and scaling frameworks for fast‑growing teams.</p>
-                            </div>
-                        </details>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
-    <div id="video-modal" class="modal video-modal" aria-hidden="true">
-        <div class="modal-overlay" data-modal-close></div>
-        <div class="modal-panel">
-            <div class="video-frame">
-                <iframe id="video-frame" width="560" height="315" src="" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="modal-actions">
-                <button class="btn btn-outline" data-modal-close type="button">Close</button>
-            </div>
-        </div>
+  <section id="home-hero" class="home-hero">
+    <div class="hero-slides">
+      <div class="hero-slide" style="background-image: url('assets/image/hero-1.webp');"></div>
+      <div class="hero-slide" style="background-image: url('assets/image/hero-2.webp');"></div>
     </div>
-    <div data-include="footer"></div>
-    <script src="assets/js/include.js"></script>
+    <div class="home-hero-inner container">
+      <h1 class="home-hero-title">
+        Secure every identity.<br />
+        <span class="accent">Power every possibility.</span>
+      </h1>
+      <p class="home-hero-desc">Your organization runs on identity — human, machine and AI. Secure them all with the
+        right level of privilege controls.</p>
+      <a class="btn hero-cta" href="#" aria-label="Explore the Platform">Explore the Platform <i
+          class="fa-solid fa-arrow-right"></i></a>
+      <div class="hero-nav">
+        <button class="hero-arrow prev" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="hero-arrow next" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+      <div class="promo-row">
+        <a class="promo-card" href="#">
+          <img class="promo-thumb" src="assets/image/faq-2.jpg" alt="Q3 results" />
+          <div class="promo-content">
+            <div class="promo-title">Announces Strong Third Quarter Results</div>
+            <div class="promo-link">Read Press Release</div>
+          </div>
+        </a>
+        <a class="promo-card" href="#">
+          <img class="promo-thumb" src="assets/image/faq-1.jpg" alt="Gartner MQ" />
+          <div class="promo-content">
+            <div class="promo-title">Leader in the 2025 Gartner MQ for PAM</div>
+            <div class="promo-link">Download Complimentary Copy</div>
+          </div>
+        </a>
+        <a class="promo-card" href="#">
+          <img class="promo-thumb" src="assets/image/faq-2.jpg" alt="Event open" />
+          <div class="promo-content">
+            <div class="promo-title">IMPACT 2026 Registration Now Open!</div>
+            <div class="promo-link">Sign Up Now</div>
+          </div>
+        </a>
+      </div>
+      <div class="hero-indicator">
+        <div class="indicator-dots">
+          <div class="dot" data-index="0">
+            <div class="dot-fill"></div>
+          </div>
+          <div class="dot" data-index="1">
+            <div class="dot-fill"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-gradient"></div>
+  </section>
+
+
+  <section class="promo-mobile-section">
+    <div class="container">
+      <div class="promo-row promo-row-mobile">
+        <a class="promo-card" href="#">
+          <img class="promo-thumb" src="assets/image/faq-2.jpg" alt="Q3 results" />
+          <div class="promo-content">
+            <div class="promo-title">Announces Strong Third Quarter Results</div>
+            <div class="promo-link">Read Press Release</div>
+          </div>
+        </a>
+        <a class="promo-card" href="#">
+          <img class="promo-thumb" src="assets/image/faq-1.jpg" alt="Gartner MQ" />
+          <div class="promo-content">
+            <div class="promo-title">Leader in the 2025 Gartner MQ for PAM</div>
+            <div class="promo-link">Download Complimentary Copy</div>
+          </div>
+        </a>
+        <a class="promo-card" href="#">
+          <img class="promo-thumb" src="assets/image/faq-2.jpg" alt="Event open" />
+          <div class="promo-content">
+            <div class="promo-title">IMPACT 2026 Registration Now Open!</div>
+            <div class="promo-link">Sign Up Now</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="watch-band section">
+    <div class="container">
+      <div class="watch-card">
+        <div class="watch-left">
+          <h2 class="watch-title">Secure every identity — human, machine and AI — with the<br /><span
+              class="accent">right level of privilege controls.</span></h2>
+          <a href="#" class="btn watch-btn">Watch the Video <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="watch-right">
+          <div class="watch-media" style="background-image: url('assets/image/service-details.jpg');">
+            <button class="play-overlay" aria-label="Play video"><i class="fa-solid fa-play"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="identity-overview section">
+    <div class="container">
+      <div class="io-grid">
+        <div class="io-left">
+          <div class="io-media">
+            <img src="assets/image/faq-2.jpg" alt="Team collaborating securely" />
+          </div>
+          <h2 class="io-title">Secure identities.<br />Shut out attackers.</h2>
+          <p class="io-desc">Seamlessly secure identities throughout the cycle of accessing any resource across any
+            infrastructure, including hybrid, SaaS and multi‑cloud. The BridgeFlair identity security platform is the
+            first line of defense against malicious actors and unauthorized access to protect what matters most.</p>
+        </div>
+        <div class="io-right">
+          <div class="io-feature">
+            <div class="io-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="io-feature-content">
+              <h3 class="io-feature-title">Seamless & secure access for all identities</h3>
+              <p class="io-feature-desc">Combine secure SSO, Adaptive MFA, lifecycle management and analytics to
+                streamline operations and deliver simple, secure access to resources—on‑premises, cloud, hybrid—from any
+                location, using any device.</p>
+            </div>
+          </div>
+          <div class="io-feature">
+            <div class="io-icon"><i class="fa-solid fa-key"></i></div>
+            <div class="io-feature-content">
+              <h3 class="io-feature-title">Intelligent privilege controls</h3>
+              <p class="io-feature-desc">Apply world‑class intelligent privilege controls across the IT estate, securing
+                the unique needs of workforce users, vendors, endpoints and machine identities as they access sensitive
+                data.</p>
+            </div>
+          </div>
+          <div class="io-feature">
+            <div class="io-icon"><i class="fa-solid fa-diagram-project"></i></div>
+            <div class="io-feature-content">
+              <h3 class="io-feature-title">Flexible identity automation & orchestration</h3>
+              <p class="io-feature-desc">Streamline processes, enable compliance and improve efficiencies with
+                orchestration and lifecycle management, permissions, entitlements, and directory and federation
+                services.</p>
+            </div>
+          </div>
+          <a href="#" class="btn io-btn">Request a Demo <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-band section">
+    <div class="container">
+      <div class="services-head">
+        <div class="services-kicker">BridgeFlair Services</div>
+        <h2 class="services-title">Apply <span class="accent-strong">intelligent privilege controls</span> across the
+          entire identity lifecycle</h2>
+        <p class="services-sub">Expand controls across human and machine identities to streamline access from any
+          location, with standing or just‑in‑time access as required — using BridgeFlair’s platform and best practices.
+        </p>
+      </div>
+      <div class="services-features-grid">
+        <a class="service-mini-card" href="services.html">
+          <div class="mini-icon"><i class="fa-solid fa-users"></i></div>
+          <div class="mini-content">
+            <div class="mini-title">Workforce & Customer Access</div>
+            <div class="mini-desc">Ensure the right users have secure access to applications and infrastructure across
+              hybrid and multi‑cloud.</div>
+            <span class="learn-link">Learn More <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a class="service-mini-card" href="services.html">
+          <div class="mini-icon"><i class="fa-solid fa-computer"></i></div>
+          <div class="mini-content">
+            <div class="mini-title">Endpoint Privilege Security</div>
+            <div class="mini-desc">Reduce attack surface by removing local admin rights and enforcing role‑based least
+              privilege.</div>
+            <span class="learn-link">Learn More <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a class="service-mini-card" href="services.html">
+          <div class="mini-icon"><i class="fa-solid fa-user-shield"></i></div>
+          <div class="mini-content">
+            <div class="mini-title">Privileged Access Management</div>
+            <div class="mini-desc">Secure privileged credentials and secrets across servers, applications, endpoints and
+              cloud resources.</div>
+            <span class="learn-link">Learn More <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a class="service-mini-card" href="services.html">
+          <div class="mini-icon"><i class="fa-solid fa-key"></i></div>
+          <div class="mini-content">
+            <div class="mini-title">Secrets Management</div>
+            <div class="mini-desc">Protect machine and application credentials, rotate secrets and govern access across
+              environments.</div>
+            <span class="learn-link">Learn More <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a class="service-mini-card" href="services.html">
+          <div class="mini-icon"><i class="fa-solid fa-id-card"></i></div>
+          <div class="mini-content">
+            <div class="mini-title">Identity Management</div>
+            <div class="mini-desc">Automate identity lifecycle, centrally manage permissions and analyze access to
+              enforce least privilege.</div>
+            <span class="learn-link">Learn More <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a class="service-mini-card" href="services.html">
+          <div class="mini-icon"><i class="fa-solid fa-cloud"></i></div>
+          <div class="mini-content">
+            <div class="mini-title">Cloud Security</div>
+            <div class="mini-desc">Extend privilege controls to cloud workloads, secure access and monitor excessive
+              permissions.</div>
+            <span class="learn-link">Learn More <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="customers-band section">
+    <div class="container">
+      <div class="customers-head">
+        <h2 class="customers-title">Securing billions of identities around the world</h2>
+        <p class="customers-sub">Nearly 10,000 organizations around the world trust BridgeFlair to secure their most
+          valuable assets and move their organizations fearlessly forward.</p>
+        <a class="customers-link" href="services.html">View More Customers <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div class="customers-top-grid" style="margin-bottom: 70px;">
+        <div class="cust-video">
+          <div class="cust-video-media">
+            <img src="assets/image/faq-1.jpg" alt="Customer video" />
+            <button class="cust-play" aria-label="Play"><i class="fa-solid fa-play"></i></button>
+          </div>
+        </div>
+        <div class="cust-quote">
+          <blockquote>“If we can control identity, we can stop most modern attacks. That is what I call true Zero Trust
+            and that is why we use BridgeFlair. This is what helps me sleep at night.”</blockquote>
+          <cite>Brian Miller, CISO, HealthFirst</cite>
+          <a class="customers-link" href="services.html">Read the Case Study <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="customers-cards-grid">
+        <a class="cust-story-card" href="services.html">
+          <div class="story-media"><img src="assets/image/faq-2.jpg" alt="Northern Trust" /></div>
+          <div class="story-content">
+            <div class="story-label">Customer Story</div>
+            <div class="story-title">Northern Trust Achieves 137% Improvement in Password Rotation Compliance and 300%
+              Improvement in Application Security</div>
+          </div>
+        </a>
+        <a class="cust-story-card" href="services.html">
+          <div class="story-media"><img src="assets/image/faq-1.jpg" alt="Hippo Insurance" /></div>
+          <div class="story-content">
+            <div class="story-label">Customer Story</div>
+            <div class="story-title">Hippo Insurance Services Streamlines User Access Reviews with Identity Governance
+            </div>
+          </div>
+        </a>
+        <a class="cust-story-card" href="services.html">
+          <div class="story-media"><img src="assets/image/service-details.jpg" alt="Blue Ridge Bank" /></div>
+          <div class="story-content">
+            <div class="story-label">Customer Story</div>
+            <div class="story-title">Blue Ridge Bank Accelerates Identity Governance by Cutting Access Review Efforts by
+              50%</div>
+          </div>
+        </a>
+        <a class="cust-story-card" href="services.html">
+          <div class="story-media"><img src="assets/image/faq-2.jpg" alt="Global Bank" /></div>
+          <div class="story-content">
+            <div class="story-label">Customer Story</div>
+            <div class="story-title">Global bank transforms how it secures loan applications</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="work-showcase section">
+    <div class="container">
+      <div class="work-head">
+        <div class="work-kicker">Our Work Showcase</div>
+        <h2 class="work-title">Where Innovation Meets Success</h2>
+      </div>
+      <div class="work-grid">
+        <a class="work-card" href="services.html">
+          <img src="assets/image/faq-1.jpg" alt="Market Analysis" class="work-img" />
+          <div class="work-overlay">
+            <div class="work-card-title">Market Analysis</div>
+            <div class="work-card-cat">Technology</div>
+          </div>
+        </a>
+        <a class="work-card" href="services.html">
+          <img src="assets/image/faq-2.jpg" alt="Risk Assessment" class="work-img" />
+          <div class="work-overlay">
+            <div class="work-card-title">Risk Assessment</div>
+            <div class="work-card-cat">Technology</div>
+          </div>
+        </a>
+        <a class="work-card" href="services.html">
+          <img src="assets/image/service-details.jpg" alt="Investment Insights" class="work-img" />
+          <div class="work-overlay">
+            <div class="work-card-title">Investment Insights</div>
+            <div class="work-card-cat">Technology</div>
+          </div>
+        </a>
+        <a class="work-card" href="services.html">
+          <img src="assets/image/faq-1.jpg" alt="Estate Planning" class="work-img" />
+          <div class="work-overlay">
+            <div class="work-card-title">Estate Planning</div>
+            <div class="work-card-cat">Technology</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="news-band section">
+    <div class="container">
+      <div class="news-head">
+        <h2 class="news-title">What’s new at BridgeFlair?</h2>
+        <p class="news-sub">Check out our latest news, content, events and more.</p>
+      </div>
+      <div class="news-feature-grid" style="margin-bottom: 70px;">
+        <a class="news-feature-media" href="services.html" aria-label="Read the latest feature">
+          <img src="assets/image/faq-2.jpg" alt="Dynamic identity security in real time" />
+        </a>
+        <div class="news-feature-content">
+          <div class="news-date">December 11, 2025</div>
+          <a class="news-feature-title" href="services.html">The future of privilege: Dynamic identity security in real
+            time <i class="fa-solid fa-arrow-right"></i></a>
+          <p class="news-feature-desc">Privilege is no longer a static control. It shifts dynamically with every action
+            taken by an increasingly dynamic set of users, workloads, and AI agents, making traditional reliance on
+            static credentials outdated and unfit...</p>
+        </div>
+      </div>
+      <div class="news-list-grid">
+        <a class="news-card" href="services.html">
+          <div class="news-card-media logo"><img src="assets/image/logo.svg" alt="BridgeFlair" /></div>
+          <div class="news-card-content">
+            <div class="news-date">November 19, 2025</div>
+            <div class="news-card-title">BridgeFlair unveils TLS certificate tool to tackle soaring labor costs and
+              system outages <i class="fa-solid fa-arrow-right"></i></div>
+          </div>
+        </a>
+        <a class="news-card" href="services.html">
+          <div class="news-card-media logo"><img src="assets/image/logo.svg" alt="BridgeFlair" /></div>
+          <div class="news-card-content">
+            <div class="news-date">November 11, 2025</div>
+            <div class="news-card-title">Shareholders approve Company’s acquisition by Palo Alto Networks <i
+                class="fa-solid fa-arrow-right"></i></div>
+          </div>
+        </a>
+        <a class="news-card" href="services.html">
+          <div class="news-card-media"><img src="assets/image/faq-1.jpg" alt="Cyber insurance expectations" /></div>
+          <div class="news-card-content">
+            <div class="news-date">December 8, 2025</div>
+            <div class="news-card-title">How AI agent privileges are redefining cyber insurance expectations <i
+                class="fa-solid fa-arrow-right"></i></div>
+          </div>
+        </a>
+        <a class="news-card" href="services.html">
+          <div class="news-card-media"><img src="assets/image/service-details.jpg" alt="Identity risks and 2026" />
+          </div>
+          <div class="news-card-content">
+            <div class="news-date">December 4, 2025</div>
+            <div class="news-card-title">AI agents and identity risks: How security will shift in 2026 <i
+                class="fa-solid fa-arrow-right"></i></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials-band section">
+    <div class="container">
+      <div class="testi-head">
+        <div class="testi-kicker">Testimonials</div>
+        <h2 class="testi-title">What Our Loving Clients Saying</h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="testi-card-top">
+            <div class="testi-user">
+              <img class="testi-avatar" src="assets/image/faq-1.jpg" alt="Tomasz Jaroszz" />
+              <div class="testi-user-meta">
+                <div class="testi-name">Tomasz Jaroszz</div>
+                <div class="testi-role">Business Advisor</div>
+              </div>
+            </div>
+            <div class="testi-date">Nov 29, 2023</div>
+          </div>
+          <div class="testi-stars">
+            <span class="starbox"><i class="fa-solid fa-star"></i></span>
+            <span class="starbox"><i class="fa-solid fa-star"></i></span>
+            <span class="starbox"><i class="fa-solid fa-star"></i></span>
+            <span class="starbox"><i class="fa-solid fa-star"></i></span>
+            <span class="starbox"><i class="fa-solid fa-star"></i></span>
+          </div>
+          <p class="testi-quote">“Seargin is awe‑inspiring. Their relentless focus on justice and attention to detail
+            gave me peace of mind. I highly recommend their legal services; they are true advocates for clients.”</p>
+        </div>
+        <div class="testi-card">
+          <div class="testi-card-top">
+            <div class="testi-user">
+              <img class="testi-avatar" src="assets/image/faq-2.jpg" alt="Michael Davis" />
+              <div class="testi-user-meta">
+                <div class="testi-name">Michael Davis</div>
+                <div class="testi-role">UI Designer</div>
+              </div>
+            </div>
+            <div class="testi-date">Nov 29, 2023</div>
+          </div>
+          <div class="testi-stars">
+            <span class="starbox"><i class="fa-solid fa-star"></i></span>
+            <span class="starbox"><i class="fa-solid fa-star"></i></span>
+            <span class="starbox"><i class="fa-solid fa-star"></i></span>
+            <span class="starbox"><i class="fa-solid fa-star"></i></span>
+            <span class="starbox"><i class="fa-solid fa-star"></i></span>
+          </div>
+          <p class="testi-quote">“Seargin is awe‑inspiring. Their relentless focus on justice and attention to detail
+            gave me peace of mind. I highly recommend their legal services; they are true advocates for clients.”</p>
+        </div>
+        <div class="testi-card">
+          <div class="testi-card-top">
+            <div class="testi-user">
+              <img class="testi-avatar" src="assets/image/service-details.jpg" alt="Diamond Hitler" />
+              <div class="testi-user-meta">
+                <div class="testi-name">Diamond Hitler</div>
+                <div class="testi-role">Founder & CEO</div>
+              </div>
+            </div>
+            <div class="testi-date">Nov 29, 2023</div>
+          </div>
+          <div class="testi-stars">
+            <span class="starbox"><i class="fa-solid fa-star"></i></span>
+            <span class="starbox"><i class="fa-solid fa-star"></i></span>
+            <span class="starbox"><i class="fa-solid fa-star"></i></span>
+            <span class="starbox"><i class="fa-solid fa-star"></i></span>
+            <span class="starbox"><i class="fa-solid fa-star"></i></span>
+          </div>
+          <p class="testi-quote">“Seargin is awe‑inspiring. Their relentless focus on justice and attention to detail
+            gave me peace of mind. I highly recommend their legal services; they are true advocates for clients.”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-band section">
+    <div class="container">
+      <div class="faq-head">
+        <div class="faq-left">
+          <div class="faq-kicker">Latest Projects</div>
+          <h2 class="faq-title">Words Meant for the Pages<br />Not the Screens"</h2>
+        </div>
+        <div class="faq-right">
+          <p class="faq-desc">Professionally optimize interdependent intellectual services visual design infomediaries
+            main issue state creative planning main best practices.</p>
+        </div>
+      </div>
+      <div class="faq-list" id="faq-list">
+        <div class="faq-row">
+          <button class="faq-trigger" aria-expanded="false">
+            <div class="faq-num">01</div>
+            <div class="faq-label">Visual Design</div>
+            <div class="faq-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+          </button>
+          <div class="faq-panel" hidden>
+            <p class="faq-answer">Design systems, brand foundations and interface craft aligned to measurable product goals.</p>
+          </div>
+        </div>
+        <div class="faq-row">
+          <button class="faq-trigger" aria-expanded="false">
+            <div class="faq-num">02</div>
+            <div class="faq-label">Business Consultation</div>
+            <div class="faq-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+          </button>
+          <div class="faq-panel" hidden>
+            <p class="faq-answer">Advisory engagements focused on delivery acceleration, governance and value realization.</p>
+          </div>
+        </div>
+        <div class="faq-row">
+          <button class="faq-trigger" aria-expanded="false">
+            <div class="faq-num">03</div>
+            <div class="faq-label">Business Agency</div>
+            <div class="faq-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+          </button>
+          <div class="faq-panel" hidden>
+            <p class="faq-answer">Outcome‑based programs from discovery to launch with continuous improvement.</p>
+          </div>
+        </div>
+        <div class="faq-row">
+          <button class="faq-trigger" aria-expanded="false">
+            <div class="faq-num">04</div>
+            <div class="faq-label">Business Factory</div>
+            <div class="faq-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+          </button>
+          <div class="faq-panel" hidden>
+            <p class="faq-answer">Repeatable capabilities and accelerators to scale delivery across portfolios.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer-root"></div>
+  <script src="assets/js/header-loader.js"></script>
+  <script src="assets/js/footer-loader.js"></script>
+  <script src="assets/js/home-hero.js"></script>
+  <script src="assets/js/faq.js"></script>
 </body>
 
 </html>

@@ -1,82 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Client Business - Contact</title>
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://cdn.jsdelivr.net; script-src 'self'; img-src 'self' data:; font-src 'self' https://cdn.jsdelivr.net; connect-src 'self'; frame-src 'self' https://www.google.com https://maps.google.com">
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link rel="stylesheet" href="assets/css/main.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-</head>
-<body>
-<div data-include="header"></div>
-<section class="page-banner">
-  <div class="container">
-    <div class="banner-content">
-      <h1>Contact us</h1>
-      <nav class="breadcrumb-box" aria-label="Breadcrumb">
-        <ol class="breadcrumb">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - BridgeFlair</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+  <body>
+    <div id="site-header-root"></div>
+
+    <section class="page-hero" style="background-image: url('assets/image/page-banner.png');">
+      <div class="container">
+        <h1>Contact us</h1>
+        <ul class="breadcrumbs" aria-label="Breadcrumb">
           <li><a href="index.html">Home</a></li>
           <li>Contact us</li>
-        </ol>
-      </nav>
-    </div>
-  </div>
-</section>
-<main class="container">
-  <section class="contact-section">
-    <div class="contact-wrap">
-      <div class="contact-form">
-        <h2>Write to Us Anytime</h2>
-        <form class="form-grid" action="#" method="post">
-          <div class="form-row">
-            <input class="form-control" type="text" placeholder="Your Name" aria-label="Your Name">
-            <input class="form-control" type="email" placeholder="Enter E-Mail" aria-label="Enter E-Mail">
-          </div>
-          <div class="form-row">
-            <input class="form-control" type="tel" placeholder="Phone Number" aria-label="Phone Number">
-            <input class="form-control" type="text" placeholder="Subject" aria-label="Subject">
-          </div>
-          <textarea class="form-textarea" placeholder="Write Message" aria-label="Write Message"></textarea>
-          <div class="contact-actions">
-            <button class="btn btn-primary" type="submit">Send Message</button>
-          </div>
-        </form>
-      </div>
-      <aside class="contact-card">
-        <h3>Don’t Forget to<br>Contact Us</h3>
-        <ul class="contact-list">
-          <li class="contact-item">
-            <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
-            <div class="contact-meta">
-              <span class="label">Call Us</span>
-              <span class="value">+1 (210) 791 8932</span>
-            </div>
-          </li>
-          <li class="contact-item">
-            <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
-            <div class="contact-meta">
-              <span class="label">Send E-Mail</span>
-              <span class="value">hr@bridgeflairinfo.com</span>
-            </div>
-          </li>
-          <li class="contact-item">
-            <span class="contact-icon"><i class="fa-regular fa-clock"></i></span>
-            <div class="contact-meta">
-              <span class="label">Office Hours</span>
-              <span class="value">9:00 AM to 5:30 PM</span>
-            </div>
-          </li>
         </ul>
-      </aside>
-    </div>
-  </section>
-</main>
-<section class="map-section">
-  <iframe class="map-frame" src="https://www.google.com/maps?q=3808+Sicily+St+Irving+TX+75038+USA&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Map"></iframe>
-</section>
-<div data-include="footer"></div>
-<script src="assets/js/include.js"></script>
-</body>
-</html>
+      </div>
+    </section>
+
+    <section class="container section contact-wrap">
+      <div class="contact-grid">
+        <div class="form-side">
+          <h2>Write to Us Anytime</h2>
+          <form class="contact-form" action="#" method="post">
+            <div class="form-row">
+              <input class="input" type="text" name="name" placeholder="Your Name" />
+              <input class="input" type="email" name="email" placeholder="Enter E-Mail" />
+            </div>
+            <div class="form-row">
+              <input class="input" type="tel" name="phone" placeholder="Phone Number" />
+              <input class="input" type="text" name="subject" placeholder="Subject" />
+            </div>
+            <textarea class="textarea" name="message" rows="8" placeholder="Write Message"></textarea>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </form>
+        </div>
+        <aside class="info-side">
+          <h3>Don’t Forget to <br/> Contact Us</h3>
+          <ul class="info-list">
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <div class="info-title">Call Us</div>
+                <div class="info-text">+1 (210) 731 8932</div>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <div class="info-title">Send E-Mail</div>
+                <div class="info-text">hr@bridgeflairinfo.com</div>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <div class="info-title">Office Hours</div>
+                <div class="info-text">9:00 AM to 5:30 PM</div>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <div class="info-title">Office Address</div>
+                <div class="info-text">1425 W Pioneer Dr #254, Irving, TX 75061</div>
+              </div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+    <section class="map-section" aria-label="Office location">
+      <iframe src="https://www.google.com/maps?q=1425+W+Pioneer+Dr+%23254,+Irving,+TX+75061&output=embed"></iframe>
+    </section>
+
+    <div id="site-footer-root"></div>
+    <script src="assets/js/header-loader.js"></script>
+    <script src="assets/js/footer-loader.js"></script>
+  </body>
+  </html>

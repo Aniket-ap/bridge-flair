@@ -1,149 +1,168 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ - BridgeFlair</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+  <body>
+    <div id="site-header-root"></div>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Client Business - FAQ</title>
-  <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self'; style-src 'self' https://cdn.jsdelivr.net; script-src 'self'; img-src 'self' data:; font-src 'self' https://cdn.jsdelivr.net; connect-src 'self'">
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css"
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-</head>
-
-<body>
-  <div data-include="header"></div>
-  <section class="page-banner">
-    <div class="container">
-      <div class="banner-content">
-        <h1>FAQ</h1>
-        <nav class="breadcrumb-box" aria-label="Breadcrumb">
-          <ol class="breadcrumb">
-            <li><a href="index.html">Home</a></li>
-            <li>FAQ</li>
-          </ol>
-        </nav>
-      </div>
-    </div>
-  </section>
-  <main class="faq-main">
-    <section class="faq-hero">
+    <section class="page-hero" style="background-image: url('assets/image/page-banner.png');">
       <div class="container">
+        <h1>FAQ</h1>
+        <ul class="breadcrumbs" aria-label="Breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li>FAQ</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="container faq-wrap">
         <div class="faq-grid">
           <div class="faq-left">
-            <p class="eyebrow">Our Help & Faq Us</p>
-            <h2 class="faq-title">Navigating FAQs with Speed and Precision"</h2>
+            <div class="faq-label">Our Help & FAQ Us</div>
+            <h1 class="faq-title">Navigating FAQs with Speed and Precision"</h1>
             <p class="faq-desc">Business tailored it design, management & support services needs to be business agency elit, sed do eiusmod tempor proved.</p>
-            <div class="faq-media">
-              <img class="faq-img" src="assets/image/faq-1.jpg" alt="">
-              <img class="faq-img" src="assets/image/faq-2.jpg" alt="">
-            </div>
-            <div class="faq-callout">
-              <span class="callout-icon"><i class="fa-solid fa-bullseye"></i></span>
-              <p class="callout-text">Business tailored it design, management & support services business agency elit sed do eiusmod tempor proved business task state of the art infrastructures for you.</p>
-            </div>
+            <div class="faq-images">
+            <img src="assets/image/faq-1.jpg" alt="FAQ scene 1" />
+            <img src="assets/image/faq-2.jpg" alt="FAQ scene 2" />
+            <img src="assets/image/faq-1.jpg" alt="FAQ scene 3" />
           </div>
+          <div class="info-pill">
+            <div class="pill-icon"><i class="fa-solid fa-circle-info"></i></div>
+            <p>Business tailored it design, management & support services business agency elit sed do eiusmod tempor proved business task state of the art infrastructures for you.</p>
+          </div>
+        </div>
           <div class="faq-right">
-            <ul class="faq-accordion">
+            <ul class="faq-questions">
               <li>
-                <details class="faq-item" open>
-                  <summary>
-                    <span>Project Horizon Redevelopment</span>
-                    <span class="faq-icon"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></span>
-                  </summary>
-                  <div class="faq-answer">
-                    <p>Credibly conceptualize multifunctional human capital after that awesome revenue superior scenarios. Collaboratively myocardiac flexible social marketing working technologies and robust services available</p>
-                  </div>
-                </details>
+                <button class="question-btn" aria-expanded="true">
+                  <span>Project Horizon Redevelopment</span>
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="question-panel">
+                  Credibly conceptualize multifunctional human capital after that awesome revenue superior scenarios. Collaboratively myocardiac flexible social marketing working technologies and robust services available
+                </div>
               </li>
               <li>
-                <details class="faq-item">
-                  <summary>
-                    <span>What is your professional passion?</span>
-                    <span class="faq-icon"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></span>
-                  </summary>
-                  <div class="faq-answer">
-                    <p>We are passionate about solving complex business problems with secure, scalable technology and thoughtful design.</p>
-                  </div>
-                </details>
+                <button class="question-btn" aria-expanded="false">
+                  <span>What is your professional passion?</span>
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="question-panel">
+                  We love partnering with teams to deliver practical innovation that drives measurable outcomes. Our passion is building solutions that users love and businesses trust.
+                </div>
               </li>
               <li>
-                <details class="faq-item">
-                  <summary>
-                    <span>Service Horizon Business low</span>
-                    <span class="faq-icon"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></span>
-                  </summary>
-                  <div class="faq-answer">
-                    <p>Our services cover strategy, implementation, and continuous improvement across your business horizon.</p>
-                  </div>
-                </details>
+                <button class="question-btn" aria-expanded="false">
+                  <span>Service Horizon Business low</span>
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="question-panel">
+                  We provide tailored service packages that grow with your needs, starting with low-friction pilots and expanding to full-scale programs.
+                </div>
               </li>
               <li>
-                <details class="faq-item">
-                  <summary>
-                    <span>Business Solution Redevelopment</span>
-                    <span class="faq-icon"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></span>
-                  </summary>
-                  <div class="faq-answer">
-                    <p>We modernize legacy solutions to enhance performance, security, and maintainability without disrupting operations.</p>
-                  </div>
-                </details>
+                <button class="question-btn" aria-expanded="false">
+                  <span>Business Solution Redevelopment</span>
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="question-panel">
+                  Our redevelopment approach focuses on modular upgrades, improved performance, and risk-managed rollout plans.
+                </div>
               </li>
               <li>
-                <details class="faq-item">
-                  <summary>
-                    <span>Do you have any custom services?</span>
-                    <span class="faq-icon"><i class="fa-solid fa-plus"></i><i class="fa-solid fa-minus"></i></span>
-                  </summary>
-                  <div class="faq-answer">
-                    <p>Yes. We tailor solutions to your unique requirements, from audits to full-scale builds and long-term support.</p>
-                  </div>
-                </details>
+                <button class="question-btn" aria-expanded="false">
+                  <span>Do you have any custom services?</span>
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <div class="question-panel">
+                  Yes. We offer custom services across integration, analytics, and automation. Contact us to scope your requirements.
+                </div>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </section>
-    <section class="update-section" aria-labelledby="update-title">
-      <div class="update-inner">
-        <div class="update-grid">
-          <div class="update-left">
-            <h2 id="update-title">Get Latest Update from Bridge Flair Stay Connect with Us</h2>
-          </div>
-          <form class="cta-form" action="#" method="post" aria-label="Subscribe">
-            <input class="cta-input" type="email" placeholder="Enter your Email" aria-label="Email">
-            <button class="btn btn-primary cta-button" type="submit">Subscribe</button>
+
+    <section class="steps-band">
+      <div class="container steps-wrap">
+        <div class="steps-head">
+          <h2>Get Latest Update from Bridge Flair Stay Connect with Us</h2>
+          <form class="subscribe-row" action="#" method="post">
+            <input class="subscribe-input" type="email" placeholder="Enter your Email" />
+            <button class="btn btn-primary subscribe-btn" type="submit">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
           </form>
         </div>
       </div>
-      <div class="steps-wrap">
+    </section>
+    <section class="steps-card-section">
+      <div class="container">
         <div class="steps-card">
-          <ul class="steps-grid">
-            <li class="steps-item">
-              <span class="steps-badge"><i class="fa-regular fa-clipboard"></i></span>
-              <h3 class="steps-title">Consult & Strategize</h3>
-              <p class="steps-desc">We assess your business goals and define a tailored roadmap to drive transformation.</p>
-            </li>
-            <li class="steps-item">
-              <span class="steps-badge"><i class="fa-solid fa-database"></i></span>
-              <h3 class="steps-title">Data & AI Integration</h3>
-              <p class="steps-desc">We implement scalable AI models and integrate them with your existing data and workflows.</p>
-            </li>
-            <li class="steps-item">
-              <span class="steps-badge"><i class="fa-regular fa-user"></i></span>
-              <h3 class="steps-title">Deploy & Optimize</h3>
-              <p class="steps-desc">From deployment to continuous improvement, we ensure your solutions deliver real impact.</p>
-            </li>
-          </ul>
+          <div class="step-item">
+            <div class="step-icon"><i class="fa-solid fa-clipboard-list"></i></div>
+            <div class="step-content">
+              <div class="step-title">Consult & Strategize</div>
+              <p>We assess your business goals and define a tailored roadmap to drive transformation.</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-icon"><i class="fa-solid fa-brain"></i></div>
+            <div class="step-content">
+              <div class="step-title">Data & AI Integration</div>
+              <p>We implement scalable AI models and integrate them with your existing data and workflows.</p>
+            </div>
+          </div>
+          <div class="step-item">
+            <div class="step-icon"><i class="fa-solid fa-user-check"></i></div>
+            <div class="step-content">
+              <div class="step-title">Deploy & Optimize</div>
+              <p>From deployment to continuous improvement, we ensure your solutions deliver real impact.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-  </main>
-  <div data-include="footer"></div>
-  <script src="assets/js/include.js"></script>
-</body>
 
+    <div id="site-footer-root"></div>
+    <script src="assets/js/header-loader.js"></script>
+    <script src="assets/js/footer-loader.js"></script>
+    <script>
+      const questionBtns = Array.from(document.querySelectorAll('.question-btn'));
+      const panels = Array.from(document.querySelectorAll('.question-panel'));
+      const firstBtn = questionBtns[0];
+      const firstPanel = panels[0];
+      const closeNonPrimary = () => {
+        questionBtns.slice(1).forEach(b => b.setAttribute('aria-expanded', 'false'));
+        panels.slice(1).forEach(p => p.style.maxHeight = '0px');
+      };
+      // collapse all panels initially
+      panels.forEach(p => p.style.maxHeight = '0px');
+      questionBtns.forEach((b, i) => { if (i !== 0) b.setAttribute('aria-expanded', 'false'); });
+      questionBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const wasOpen = btn.getAttribute('aria-expanded') === 'true';
+          if (btn !== firstBtn) closeNonPrimary();
+          const panel = btn.parentElement.querySelector('.question-panel');
+          if (!wasOpen) {
+            btn.setAttribute('aria-expanded', 'true');
+            if (panel) panel.style.maxHeight = panel.scrollHeight + 'px';
+          } else if (btn !== firstBtn) {
+            btn.setAttribute('aria-expanded', 'false');
+            if (panel) panel.style.maxHeight = '0px';
+          }
+        });
+      });
+      // Ensure first stays open
+      if (firstBtn && firstPanel) {
+        firstBtn.setAttribute('aria-expanded', 'true');
+        firstPanel.style.maxHeight = firstPanel.scrollHeight + 'px';
+      }
+    </script>
+  </body>
 </html>

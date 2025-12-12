@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply for Job - BridgeFlair</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+  <body>
+    <div id="site-header-root"></div>
+
+    <section class="page-hero" style="background-image: url('assets/image/page-banner.png');">
+      <div class="container">
+        <h1>Apply for Position</h1>
+        <ul class="breadcrumbs" aria-label="Breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li>Apply</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section apply-section">
+      <div class="container">
+        <div class="apply-grid">
+          <div class="apply-form apply-card">
+            <h2 class="apply-title">Application Details</h2>
+            <p class="apply-sub">You are applying for: <span class="apply-job-title">Job Title</span></p>
+            <form class="apply-fields" action="#" method="post" enctype="multipart/form-data">
+              <div class="form-row">
+                <div class="field">
+                  <label for="first_name">First Name</label>
+                  <input class="input" id="first_name" name="first_name" type="text" required />
+                </div>
+                <div class="field">
+                  <label for="last_name">Last Name</label>
+                  <input class="input" id="last_name" name="last_name" type="text" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input class="input" id="email" name="email" type="email" required />
+                </div>
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input class="input" id="phone" name="phone" type="tel" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="field">
+                  <label for="city">City</label>
+                  <input class="input" id="city" name="city" type="text" />
+                </div>
+                <div class="field">
+                  <label for="workplace">Workplace Preference</label>
+                  <select class="input" id="workplace" name="workplace">
+                    <option value="">Select</option>
+                    <option>Hybrid/Office Based</option>
+                    <option>Remote</option>
+                    <option>Onsite</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="field">
+                  <label for="linkedin">LinkedIn Profile URL</label>
+                  <input class="input" id="linkedin" name="linkedin" type="url" />
+                </div>
+                <div class="field">
+                  <label for="portfolio">Portfolio URL (optional)</label>
+                  <input class="input" id="portfolio" name="portfolio" type="url" />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="field">
+                  <label for="resume">Resume</label>
+                  <input class="input" id="resume" name="resume" type="file" accept=".pdf,.doc,.docx" />
+                </div>
+                <div class="field">
+                  <label for="cover_letter_file">Cover Letter File</label>
+                  <input class="input" id="cover_letter_file" name="cover_letter_file" type="file" accept=".pdf,.doc,.docx" />
+                </div>
+              </div>
+              <div class="field">
+                <label for="cover_letter">Cover Letter</label>
+                <textarea class="textarea" id="cover_letter" name="cover_letter" rows="8"></textarea>
+              </div>
+              <div class="apply-actions">
+                <button class="btn btn-primary" type="submit">Submit Application</button>
+                <a class="btn" href="careers.html">Back to Careers</a>
+              </div>
+            </form>
+          </div>
+          <aside class="apply-info">
+            <h3>What Happens Next</h3>
+            <div class="apply-steps">
+              <div class="apply-step">
+                <div class="step-badge"><i class="fa-solid fa-file-circle-check"></i></div>
+                <div>
+                  <div class="info-title">Application Review</div>
+                  <div class="info-text">Our hiring team reviews your application within 3–5 business days.</div>
+                </div>
+              </div>
+              <div class="apply-step">
+                <div class="step-badge"><i class="fa-solid fa-video"></i></div>
+                <div>
+                  <div class="info-title">Initial Conversation</div>
+                  <div class="info-text">We schedule an introductory call to learn more about you.</div>
+                </div>
+              </div>
+              <div class="apply-step">
+                <div class="step-badge"><i class="fa-solid fa-users"></i></div>
+                <div>
+                  <div class="info-title">Team Interview</div>
+                  <div class="info-text">Meet the team and discuss role expectations and culture.</div>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <div id="site-footer-root"></div>
+    <script src="assets/js/header-loader.js"></script>
+    <script src="assets/js/footer-loader.js"></script>
+    <script>
+      const params = new URLSearchParams(location.search);
+      const title = params.get('title');
+      const el = document.querySelector('.apply-job-title');
+      if (title && el) { el.textContent = title; }
+    </script>
+  </body>
+</html>

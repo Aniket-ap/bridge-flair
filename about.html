@@ -1,220 +1,168 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Client Business - About</title>
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://cdn.jsdelivr.net 'nonce-bf'; script-src 'self'; img-src 'self' data:; font-src 'self' https://cdn.jsdelivr.net; connect-src 'self'">
-<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-<link rel="stylesheet" href="assets/css/main.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-</head>
-<body>
-<div data-include="header"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - BridgeFlair</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+  <body>
+    <div id="site-header-root"></div>
 
-<style nonce="bf">
-  #about-page-hero { background: var(--contact-bg); padding: 64px 0; }
-  #about-page-hero .container { padding: 0 24px; }
-  #about-page-hero .about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; align-items: center; }
-  #about-page-hero .eyebrow { color: var(--primary); font-weight: 600; font-size: 0.95rem; }
-  #about-page-hero .about-title { font-size: 44px; color: var(--text); }
-  #about-page-hero .about-lead { color: var(--muted); margin-bottom: 16px; }
-  #about-page-hero .about-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
-  #about-page-hero .about-item { position: relative; padding-left: 18px; color: var(--text); }
-  #about-page-hero .about-item::before { content: ""; position: absolute; left: 0; top: 10px; width: 8px; height: 8px; border-radius: 50%; background: var(--primary); display: inline-block; }
-  #about-page-hero .about-image { width: 100%; height: 420px; display: block; border-radius: 12px; object-fit: cover; }
-  #about-page-hero .about-divider { height: 1px; background: var(--border); margin: 32px 0; }
-  #about-page-hero .about-features-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-  #about-page-hero .about-feature { text-align: center; }
-  #about-page-hero .about-feature-icon { font-size: 28px; color: var(--text); margin-bottom: 8px; display: inline-block; }
-  #about-page-hero .about-feature h3 { font-size: 18px; font-weight: 700; color: var(--text); margin: 8px 0; }
-  #about-page-hero .about-feature p { color: var(--muted); }
-  @media (max-width: 992px) {
-    #about-page-hero .about-grid { grid-template-columns: 1fr; }
-    #about-page-hero .about-title { font-size: 36px; }
-    #about-page-hero .about-image { height: 300px; }
-  }
-</style>
-<section class="page-banner">
-  <div class="container">
-    <div class="banner-content">
-      <h1>Why Choose Us</h1>
-      <nav class="breadcrumb-box" aria-label="Breadcrumb">
-        <ol class="breadcrumb">
-          <li><a href="index.html">Home</a></li>
-          <li>About</li>
-        </ol>
-      </nav>
-    </div>
-  </div>
- </section>
-<main class="about-main">
-  <section id="about-page-hero">
-    <div class="container">
-      <div class="about-grid">
-        <div>
-          <p class="eyebrow">Who We Are</p>
-          <h2 class="about-title">AI-Driven. Agile-Focused.<br/>Future-Ready.</h2>
-          <p class="about-lead">At BridgeFlair, we redefine how businesses innovate, adapt, and scale. Combining AI-driven talent solutions with cutting-edge digital transformation strategies, we empower organizations to stay ahead in an ever‑evolving digital landscape.</p>
-          <ul class="about-list">
-            <li class="about-item">AI-powered talent solutions and digital transformation</li>
-            <li class="about-item">Expertise in artificial intelligence and machine learning</li>
-            <li class="about-item">Agile methodologies for faster results</li>
-            <li class="about-item">Future-proof strategies for long-term success</li>
-          </ul>
-        </div>
-        <img class="about-image" src="assets/image/faq-2.jpg" alt="Team collaborating">
-      </div>
-      <div class="about-divider"></div>
-      <ul class="about-features-grid">
-        <li class="about-feature">
-          <span class="about-feature-icon"><i class="fa-solid fa-diagram-project"></i></span>
-          <h3>Agile Transformation</h3>
-          <p>Implement agile frameworks for collaboration, flexibility, and continuous innovation.</p>
-        </li>
-        <li class="about-feature">
-          <span class="about-feature-icon"><i class="fa-solid fa-robot"></i></span>
-          <h3>AI &amp; Automation</h3>
-          <p>Streamline operations, enhance insights, and improve decision‑making.</p>
-        </li>
-        <li class="about-feature">
-          <span class="about-feature-icon"><i class="fa-solid fa-cloud"></i></span>
-          <h3>Cloud &amp; Data Intelligence</h3>
-          <p>Optimize operations with secure and scalable cloud and data services.</p>
-        </li>
-        <li class="about-feature">
-          <span class="about-feature-icon"><i class="fa-solid fa-users-gear"></i></span>
-          <h3>Intelligent IT Staffing</h3>
-          <p>Access AI‑savvy talent for building and scaling innovative solutions.</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="about-purpose-section" aria-labelledby="ap-title">
-    <div class="container">
-      <div class="ap-grid">
-        <div class="ap-left">
-          <h2 id="ap-title" class="ap-title">Our Purpose</h2>
-          <p class="ap-desc">Our purpose is to make transformation unstoppable. We help enterprises move from ambition to achievement by turning complexity into clarity and challenges into momentum. Since 1994, we have placed AI, trust, and resilience at the heart of every solution we create.</p>
-          <p class="ap-desc">We exist to help organizations thrive in demanding industries and stay agile in times of change. Our promise is to build solutions that deliver today and prepare for tomorrow.</p>
-          <p class="ap-desc">We live our purpose through action, with the courage to step forward and the intelligence to lead transformation with clarity. With every partnership, we strive to unlock growth, inspire confidence, and create futures that endure.</p>
-        </div>
-        <div class="ap-right">
-          <h2 class="ap-title">What Makes Us Different</h2>
-          <ul class="diff-list" aria-label="Differentiators">
-            <li>
-              <div class="diff-row">
-                <span class="diff-num">01</span>
-                <div class="diff-content">
-                  <h3>Built-In Integrity</h3>
-                  <p>Every solution is rooted in trust, governance, and ethical AI—delivering confidence at scale.</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="diff-row">
-                <span class="diff-num">02</span>
-                <div class="diff-content">
-                  <h3>Action at Pace</h3>
-                  <p>We design with agility, enabling enterprises to respond quickly while staying precise and effective.</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="diff-row">
-                <span class="diff-num">03</span>
-                <div class="diff-content">
-                  <h3>Forward‑Thinking Intelligence</h3>
-                  <p>Our systems anticipate change, creating intelligent outcomes that keep businesses ahead of the curve.</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="about-values-section" aria-labelledby="values-title">
-    <div class="container">
-      <header class="values-header">
-        <h2 id="values-title" class="values-title">Our Values</h2>
-        <p class="values-lead">Values are the principles that shape how we work and the outcomes we deliver.</p>
-      </header>
-      <div class="values-grid">
-        <figure class="values-media">
-          <img class="values-img" src="assets/image/faq-1.jpg" alt="Team values in action">
-        </figure>
-        <ul class="values-list" aria-label="Values list">
-          <li>
-            <div class="val-row">
-              <span class="val-num">01</span>
-              <div class="val-content">
-                <h3>Innovation with Integrity</h3>
-                <p>We bring fresh ideas to life with honesty and responsibility.</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="val-row">
-              <span class="val-num">02</span>
-              <div class="val-content">
-                <h3>Precision in Motion</h3>
-                <p>We act with speed and accuracy, ensuring every step delivers.</p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="val-row">
-              <span class="val-num">03</span>
-              <div class="val-content">
-                <h3>Inclusion as Power</h3>
-                <p>Diversity and equity drive creativity and growth.</p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="update-section" aria-labelledby="update-title">
-      <div class="update-inner">
-        <div class="update-grid">
-          <div class="update-left">
-            <h2 id="update-title">Get Latest Update from Bridge Flair Stay Connect with Us</h2>
+    <section class="section about-hero">
+      <div class="container">
+        <div class="about-hero-grid">
+          <div class="about-hero-content">
+            <h1 class="about-hero-title">Passwordless Experience</h1>
+            <p class="about-hero-desc">Transform enterprise security and employee productivity with an end‑to‑end passwordless experience that goes beyond traditional authentication.</p>
+            <a class="btn btn-primary" href="#" aria-label="Get the ebook">Get the eBook</a>
           </div>
-          <form class="cta-form" action="#" method="post" aria-label="Subscribe">
-            <input class="cta-input" type="email" placeholder="Enter your Email" aria-label="Email">
-            <button class="btn btn-primary cta-button" type="submit">Subscribe</button>
-          </form>
-        </div>
-      </div>
-      <div class="steps-wrap">
-        <div class="steps-card">
-          <ul class="steps-grid">
-            <li class="steps-item">
-              <span class="steps-badge"><i class="fa-regular fa-clipboard"></i></span>
-              <h3 class="steps-title">Consult & Strategize</h3>
-              <p class="steps-desc">We assess your business goals and define a tailored roadmap to drive transformation.</p>
-            </li>
-            <li class="steps-item">
-              <span class="steps-badge"><i class="fa-solid fa-database"></i></span>
-              <h3 class="steps-title">Data & AI Integration</h3>
-              <p class="steps-desc">We implement scalable AI models and integrate them with your existing data and workflows.</p>
-            </li>
-            <li class="steps-item">
-              <span class="steps-badge"><i class="fa-regular fa-user"></i></span>
-              <h3 class="steps-title">Deploy & Optimize</h3>
-              <p class="steps-desc">From deployment to continuous improvement, we ensure your solutions deliver real impact.</p>
-            </li>
-          </ul>
+          <div class="about-hero-media">
+            <img src="assets/image/faq-2.jpg" alt="Modern workspace" />
+          </div>
         </div>
       </div>
     </section>
-</main>
-<div data-include="footer"></div>
-<script src="assets/js/include.js"></script>
-</body>
+    <section class="section about-overview">
+      <div class="container">
+        <div class="overview-panel">
+        <div class="overview-grid">
+          <div class="overview-media">
+            <img src="assets/image/faq-1.jpg" alt="BridgeFlair team" />
+          </div>
+          <div class="overview-left">
+            <div class="overview-label">Who We Are</div>
+            <h2 class="overview-title">AI‑Driven. Agile‑Focused. Future‑Ready.</h2>
+            <p class="overview-desc">At BridgeFlair, we redefine how businesses innovate, adapt, and scale. Combining AI‑driven talent solutions with cutting‑edge digital transformation strategies, we empower organizations to stay ahead in an ever‑evolving digital landscape.</p>
+            <ul class="overview-points">
+              <li>AI‑powered talent solutions and digital transformation</li>
+              <li>Agile methodologies for faster results</li>
+              <li>Expertise in artificial intelligence and machine learning</li>
+              <li>Future‑proof strategies for long‑term success</li>
+            </ul>
+          </div>
+        </div>
+        <div class="overview-divider"></div>
+        <div class="overview-pill-grid">
+          <div class="pill-item">
+            <div class="pill-icon"><i class="fa-solid fa-people-arrows"></i></div>
+            <div class="pill-title">Agile Transformation</div>
+            <div class="pill-desc">Implement agile frameworks for collaboration, flexibility, and continuous innovation.</div>
+          </div>
+          <div class="pill-item">
+            <div class="pill-icon"><i class="fa-solid fa-robot"></i></div>
+            <div class="pill-title">AI & Automation</div>
+            <div class="pill-desc">Streamline operations, enhance insights, and improve decision‑making.</div>
+          </div>
+          <div class="pill-item">
+            <div class="pill-icon"><i class="fa-solid fa-cloud"></i></div>
+            <div class="pill-title">Cloud & Data Intelligence</div>
+            <div class="pill-desc">Optimize operations with secure and scalable cloud and data services.</div>
+          </div>
+          <div class="pill-item">
+            <div class="pill-icon"><i class="fa-solid fa-users-gear"></i></div>
+            <div class="pill-title">Intelligent IT Staffing</div>
+            <div class="pill-desc">Access AI‑savvy talent for building and scaling innovative solutions.</div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section class="section about-stats">
+      <div class="container">
+        <div class="stats-panel">
+          <h2 class="stats-title"><span class="accent-lime">Passwords are more than just a security risk</span> — they’re a costly and inefficient burden on both IT teams and employees.</h2>
+          <p class="stats-sub">From phishing attacks to constant resets and account lockouts, password‑based authentication creates vulnerabilities, drains resources and hinders productivity.</p>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-value">70%</div>
+              <div class="stat-desc">of security breaches are linked to phishing and compromised credentials</div>
+              <div class="stat-bar"><span class="stat-fill stat-1"></span></div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">50%</div>
+              <div class="stat-desc">of all helpdesk calls are password resets, with an average cost of $70 per reset</div>
+              <div class="stat-bar"><span class="stat-fill stat-2"></span></div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">$346</div>
+              <div class="stat-desc">Average annual cost of fixing account lockouts per employee, a hidden budget leak</div>
+              <div class="stat-bar"><span class="stat-fill stat-3"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section about-benefits">
+      <div class="container">
+        <div class="benefits-accent"></div>
+        <div class="benefits-grid">
+          <div class="benefits-left">
+            <h2 class="benefits-title">The Next Era of Work Starts<br/> Password‑Free</h2>
+            <p class="benefits-desc">Relying on passwords to defend against modern threats is a thing of the past. Experience the future of cybersecurity with integrated security from endpoint to application, ensuring consistent protection and a seamless experience.</p>
+            <div class="benefits-thumb">
+              <img src="assets/image/faq-1.jpg" alt="Security in action" />
+            </div>
+          </div>
+          <div class="benefits-right">
+            <ul class="benefits-list">
+              <li class="benefit-item">
+                <span class="benefit-badge"><i class="fa-solid fa-shield-halved"></i></span>
+                <div>
+                  <div class="benefit-title">Eliminate credential‑based threats</div>
+                  <div class="benefit-desc">Leverage cutting‑edge methods like biometrics, FIDO2 hardware tokens and passkeys to thwart phishing, brute force and credential stuffing attacks.</div>
+                </div>
+              </li>
+              <li class="benefit-item">
+                <span class="benefit-badge"><i class="fa-solid fa-bolt"></i></span>
+                <div>
+                  <div class="benefit-title">Let employees get stuff done</div>
+                  <div class="benefit-desc">Eliminate the hassle of password resets and deliver a frictionless intuitive user experience to boost productivity.</div>
+                </div>
+              </li>
+              <li class="benefit-item">
+                <span class="benefit-badge"><i class="fa-solid fa-diagram-project"></i></span>
+                <div>
+                  <div class="benefit-title">Streamline IT operations</div>
+                  <div class="benefit-desc">Automate identity management and reduce helpdesk costs so you can free up IT resources for strategic security initiatives.</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section about-features">
+      <div class="container">
+        <div class="feature-rows">
+          <div class="feature-row">
+            <div class="feature-text">
+              <h3 class="feature-title">Unified Access Across All Apps</h3>
+              <div class="feature-sub">Deliver a seamless passwordless experience across all apps</div>
+              <p class="feature-desc">Extend passwordless access to legacy, on‑prem and custom apps, ensuring consistent security in hybrid environments.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="feature-image">
+              <img src="assets/image/faq-2.jpg" alt="Unified access" />
+            </div>
+          </div>
+          <div class="feature-row">
+            <div class="feature-image">
+              <img src="assets/image/faq-1.jpg" alt="Continuous authentication" />
+            </div>
+            <div class="feature-text">
+              <h3 class="feature-title">Continuous Authentication</h3>
+              <div class="feature-sub">Deploy an end‑to‑end passwordless experience</div>
+              <p class="feature-desc">Leverage dynamic risk signals that safeguard your access at every stage — before, during and beyond the login — powered by BridgeFlair’s unified identity security platform.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="site-footer-root"></div>
+    <script src="assets/js/header-loader.js"></script>
+    <script src="assets/js/footer-loader.js"></script>
+  </body>
 </html>
